@@ -1,6 +1,6 @@
 {
     "name": "beyondit/opencart-stripe-extension",
-    "description": "Opencart Stripe Integration",
+    "description": "Opencart Stripe Extension",
     "type": "opencart-extension",
     "authors": [
         {

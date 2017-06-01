@@ -9,6 +9,7 @@
  - Stripe credit card payment integration
  - Interactive credit card based on (https://github.com/jessepollak/card)
  - 3D Secure support
+ - Supports Opencart version 2.3
 
 ## Development Setup
 
