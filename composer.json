@@ -1,0 +1,42 @@
+{
+    "name": "beyondit/opencart-stripe-extension",
+    "description": "Opencart Stripe Integration",
+    "type": "opencart-extension",
+    "authors": [
+        {
+            "name": "stefanhuber",
+            "email": "stefan.huber@beyondit.at"
+        }
+    ],
+    "require-dev": {
+      "opencart/opencart" : "2.3.0.2",
+      "vlucas/phpdotenv": "~1.1.0",
+      "consolidation/robo": "~1"
+    },
+    "config": {
+      "bin-dir": "bin/",
+      "preferred-install": "source"
+    },
+    "require": {
+      "beyondit/opencart-extension-installer": "*",
+        "stripe/stripe-php": "^4.10"
+    },
+    "extra": {
+      "src-dir" : "src/upload" ,
+      "mappings" : [
+        "admin/controller/extension/payment/stripe.php",
+        "admin/language/en-gb/extension/payment/stripe.php",
+        "admin/view/image/payment/stripe.png",
+        "admin/view/template/extension/payment/stripe.tpl",
+        "catalog/controller/extension/payment/stripe.php",
+        "catalog/language/de-de/extension/payment/stripe.php",
+        "catalog/language/en-gb/extension/payment/stripe.php",
+        "catalog/model/extension/payment/stripe.php",
+        "catalog/view/theme/default/template/extension/payment/stripe.tpl",
+        "catalog/view/javascript/jquery.card.js"
+      ],
+      "installers" : {
+        "xml" : "src/install.xml"
+      }
+    }
+}
